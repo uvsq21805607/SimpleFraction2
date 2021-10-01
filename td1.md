@@ -260,7 +260,7 @@ Pour réaliser cette exercice, vous devez bien évidemment vous reporter à la d
 1. Comment choisir le JDK à utiliser dans un projet ?
     > on choisit le JDK selon la plateforme java considérée par exemple JSE qui est designée our la java 2 standard edition.
 1. Comment préciser la version Java des sources dans un projet ?
-    > Répondre ici
+    > Pour préciser une version différente, il suffit de cocher « Utiliser une compatibilité propre au projet » et de sélectionner la version à utiliser dans la liste déroulante. Il est possible de modifier la version du JDK à utiliser dans les préférences du projet.
 1. Comment ajouter une bibliothèque externe dans un projet ?
     > en ligne de commande utiliser l'option -classpath et lister les jar 
 1. Comment reformater un fichier source Java ?
@@ -276,6 +276,6 @@ Pour réaliser cette exercice, vous devez bien évidemment vous reporter à la d
     > javac fichier.java
     > java fichier 
 1. Comment déboguer le programme en visualisant le contenu d'une ou plusieurs variables ?
-    > Répondre ici
+    > on ré exécute ce programme sous contrôle de cet debogeur qui permet de vérifier le déroulement du programme et de consulter le contenu des variables, et cela nous permet de constater ou se trouve l'erreur et la corriger.
 1. Quels paramètres ou fonctionnalités vous semblent particulièrement importants/utiles pour le développement Java ?
     > le package JDK pour compiler et executer les fichiers java 
