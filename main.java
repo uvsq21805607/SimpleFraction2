@@ -27,13 +27,13 @@ public class main {
 
 // ADDITION DE DEUX FRACTIONS : 
 
-		frac S = new frac(1,2);
+		frac uneVariable = new frac(1,2);
 
-		frac d = L.addition(S);
+		frac d = L.addition(uneVariable);
 
 		 System.out.println(" Addition : \n ");
 
-		 System.out.println( S.toString() + " + " + L.toString() + "\n");
+		 System.out.println( uneVariable.toString() + " + " + L.toString() + "\n");
 
 		 System.out.println(" Resultat de la addition = \n " + d.toString()+ "\n");
 

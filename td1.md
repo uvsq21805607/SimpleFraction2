@@ -198,46 +198,53 @@ Vous pouvez répondre en utilisant le shell de votre choix (*bash*, *Powershell*
 Pour répondre à ces questions, vous devez effectuer les recherches documentaires adéquates (livre, web, …).
 
 1. Quel OS et quel shell de commande utilisez-vous ?
-    > Répondre ici
+    > Terminal Version 2.11 (440) de macbook air
 1. Quelle commande permet d'obtenir de l'aide ?
 Donnez un exemple.
     ```bash
-    # Répondre ici
+     >/ --help :  man --help
     ```
 1. Donnez la ou les commandes shell permettant de
     1. afficher les fichiers d'un répertoire triés par taille (taille affichée lisiblement)
         ```bash
-        # Répondre ici
+          ls -lsh
         ```
     1. compter le nombre de ligne d'un fichier
         ```bash
-        # Répondre ici
+        wc -l (le fichier)
         ```
     1. afficher les lignes du fichier `Main.java` contenant la chaîne `uneVariable`
         ```bash
-        # Répondre ici
+       grep uneVariable Main.java
+       > pour afficher la ligne ou se trouve la chaine on entre :
+       grep -n uneVariable Main.java
         ```
     1. afficher récursivement les fichiers `.java` contenant la chaîne `uneVariable`
         ```bash
-        # Répondre ici
+        grep -l -r uneVariable (sous-dossiers ou se trouve les fichiers .java)/*.java
+
         ```
     1. trouver les fichiers (pas les répertoires) nommés `README.md` dans une arborescence de répertoires
         ```bash
-        # Répondre ici
+        find . -name README.md
         ```
     1. afficher les différences entre deux fichiers textes
         ```bash
-        # Répondre ici
+        diff main.java frac.java
+        > ou bien plus detaillé
+        diff -u main.java frac.java
         ```
 1. Expliquez en une ou deux phrases le rôle de ces commandes et dans quel contexte elles peuvent être utiles pour un développeur.
     * `ssh`
-        > Répondre ici
+        > Cette commmande qui permet de se connecter a une machine distante ou d'executer des commmande distante en fournissant des transmissions cryptées et sécurisées entre deux machines qui ne sont pas sures 
     * `screen`/`tmux`
-        > Répondre ici
+        > sreen est un multiplexeur de terminaux il permet d'ouvrir plusieurs terminaux dans une meme console , la possibilité de partager un terminal avec un autre utlisateur et aussi d'atacher ou de detacher une session .
+        > tmux est un multiplexeur de terminaux il permet d'exploiter plusieurs terminaux en meme temps 
     * `curl`/[HTTPie](https://httpie.org/)
-        > Répondre ici
+        > curl permet d'envoyer ou de telecharger des ressources accessibles par le reseau et peut servir aussi d'outil de diagnostic
     * [jq](https://stedolan.github.io/jq/)
-        > Répondre ici
+         > jq permet de manipuler facilement des données JSON en ligne de commande ou dans un script SHELL on peut l'utiliser pour extraire les données ou les reformer dans un format JSON different de celui d'origine .
+
 
 ### Découverte de votre *IDE*
 Dans cet exercice, vous expliquerez en quelques phrases comment vous réalisez les actions ci-dessous dans votre IDE.
@@ -245,28 +252,30 @@ Vous pouvez choisir l'IDE/éditeur de texte de votre choix.
 Pour réaliser cette exercice, vous devez bien évidemment vous reporter à la documentations de l'IDE ([IntelliJ IDEA](https://www.jetbrains.com/help/idea/discover-intellij-idea.html#developer-tools), [Visual Studio Code](https://code.visualstudio.com/docs), [Eclipse](https://help.eclipse.org/2020-09/index.jsp), …).
 
 1. Quels IDE ou éditeurs de texte utilisez-vous pour le développement Java ?
-    > Répondre ici
+    > Sublime Text 3
 
     Pour la suite, ne considérez que l'un de vos choix.
 1. Comment vérifier/définir que l'encodage utilisé est *UTF-8* ?
-    > Répondre ici
+    > taper : control + ` une console s'affiche ecrire ( view.encoding() ) et taper entrer on trouve ensuite qu'il s'agit bien de l'encodage (`UTF-8') 
 1. Comment choisir le JDK à utiliser dans un projet ?
-    > Répondre ici
+    > on choisit le JDK selon la plateforme java considérée par exemple JSE qui est designée our la java 2 standard edition.
 1. Comment préciser la version Java des sources dans un projet ?
     > Répondre ici
 1. Comment ajouter une bibliothèque externe dans un projet ?
-    > Répondre ici
+    > en ligne de commande utiliser l'option -classpath et lister les jar 
 1. Comment reformater un fichier source Java ?
-    > Répondre ici
+    > cliquer sur : command + shift + f
 1. Comment trouver la déclaration d'une variable ou méthode ?
-    > Répondre ici
+    > en double clique sur la variable ou methode les autres occurrances serront encadrées on peut cliquer aussi sur control + D 
 1. Comment insérer un bloc de code prédéfini (*snippet*) ?
-    > Répondre ici
+    > cilquer sur command + espace
 1. Comment renommer une classe dans l'ensemble du projet ?
-    > Répondre ici
+    > double cliquer sur le nom de la classe + control D et renommer 
 1. Comment exécuter le programme en lui passant un paramètre en ligne de commande ?
-    > Répondre ici
+   dans terminal entrer : 
+    > javac fichier.java
+    > java fichier 
 1. Comment déboguer le programme en visualisant le contenu d'une ou plusieurs variables ?
     > Répondre ici
 1. Quels paramètres ou fonctionnalités vous semblent particulièrement importants/utiles pour le développement Java ?
-    > Répondre ici
+    > le package JDK pour compiler et executer les fichiers java 
