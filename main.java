@@ -37,6 +37,16 @@ public class main {
 
 		 System.out.println(" Resultat de la addition = \n " + d.toString()+ "\n");
 
+		frac uneVariable1 = new frac(1,2);
+
+		frac d1 = uneVariable.addition(uneVariable1);
+
+		 System.out.println(" Division : \n ");
+
+		 System.out.println( uneVariable.toString() + " div " + uneVariable.toString() + "\n");
+
+		 System.out.println(" Resultat de la division = \n " + d1.toString()+ "\n");
+
 
 	} 
 }

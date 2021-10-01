@@ -39,4 +39,13 @@ public class frac{
 		return new frac(a,b);
 	}
 
+	public frac division(frac A){
+
+		int a = (this.nume * A.denom);
+		int b = this.denom * A.denom;
+
+		return new frac(a,b);
+	}
+
+
 }
